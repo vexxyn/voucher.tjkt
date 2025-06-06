@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotspot Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-gradient"></div>
+    
+    <div class="container animate__animated animate__fadeIn">
+        <div class="logos">
+            <img src="assets/images/logo1.png" alt="Company Logo" class="logo animate__animated animate__fadeInDown animate__delay-1s">
+            <img src="assets/images/logo2.png" alt="Hotspot Logo" class="logo animate__animated animate__fadeInDown animate__delay-2s">
+        </div>
+        
+        <div class="login-tabs">
+            <button class="tab-button active" data-tab="user-login">User Login</button>
+            <button class="tab-button" data-tab="voucher-login">Voucher Login</button>
+        </div>
+        
+        <div class="tab-content active" id="user-login">
+            <form id="userForm" class="login-form">
+                <div class="form-group">
+                    <input type="text" id="username" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <div class="network-status">
+                    <div class="speedometer">
+                        <span class="speed-label">Speed:</span>
+                        <span class="speed-value" id="current-speed">0 Mbps</span>
+                    </div>
+                    <div class="data-usage">
+                        <span class="data-label">Usage:</span>
+                        <span class="data-value" id="data-usage">0 MB</span>
+                    </div>
+                </div>
+                <button type="submit" class="login-button">Login</button>
+            </form>
+        </div>
+        
+        <div class="tab-content" id="voucher-login">
+            <form id="voucherForm" class="login-form">
+                <div class="form-group">
+                    <input type="text" id="voucher-code" placeholder="Voucher Code" required>
+                </div>
+                <div class="voucher-info">
+                    <div class="time-remaining">
+                        <span class="time-label">Time Left:</span>
+                        <span class="time-value" id="time-remaining">00:00:00</span>
+                    </div>
+                </div>
+                <button type="submit" class="login-button">Use Voucher</button>
+            </form>
+        </div>
+        
+        <div class="voucher-prices animate__animated animate__slideInUp">
+            <h3>Voucher Packages</h3>
+            <ul class="price-list" id="voucher-list">
+                <!-- Filled by JavaScript -->
+            </ul>
+        </div>
+    </div>
+    
+    <div class="notification-container" id="notification-container"></div>
+    
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/network.js"></script>
+    <script src="js/voucher.js"></script>
+</body>
+</html>

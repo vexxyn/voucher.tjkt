@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Hotspot Login</string>
+    <string name="user_login">User Login</string>
+    <string name="voucher_login">Voucher Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="voucher_code">Voucher Code</string>
+    <string name="login">Login</string>
+    <string name="use_voucher">Use Voucher</string>
+    <string name="speed">Speed: %1$d Mbps</string>
+    <string name="usage">Usage: %1$d MB</string>
+    <string name="time_remaining">Time Remaining: %1$s</string>
+    <string name="fill_all_fields">Please fill in all fields</string>
+    <string name="enter_voucher_code">Please enter voucher code</string>
+    <string name="login_success">Login successful!</string>
+    <string name="invalid_credentials">Invalid username or password</string>
+    <string name="voucher_accepted">Voucher accepted!</string>
+    <string name="invalid_voucher">Invalid voucher code</string>
+    <string name="voucher_expired">Voucher time has expired</string>
+    <string name="back">Back</string>
+</resources>
